@@ -39,6 +39,3 @@ students = ["Joni", "Budi", "Setiawan", "Budi"] # kumpulan data
 x = students.pop(-1)
 print(students)
 print(x)
-
-
-studen-
