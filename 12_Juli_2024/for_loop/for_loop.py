@@ -24,3 +24,8 @@ for l in name:
 # range Create a sequence of numbers from 0 to before declared number, and print each item in the sequence:
 for n in range(1, 4+1):
   print(n)
+  
+l1 = ["eat", "sleep", "repeat"]
+# printing the tuples in object directly
+for i, ele in enumerate(l1,1):
+    print (f"{i}. {ele}", type(ele))

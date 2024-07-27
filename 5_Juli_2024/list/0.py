@@ -39,3 +39,7 @@ students = ["Joni", "Budi", "Setiawan", "Budi"] # kumpulan data
 x = students.pop(-1)
 print(students)
 print(x)
+
+names = ["Joni", "Budi", "Setiawan", "Budi"] # jumlahnya ada 4
+jumlah_names = len(names)
+print(jumlah_names)
