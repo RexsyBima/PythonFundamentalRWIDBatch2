@@ -13,6 +13,7 @@ back_name  = input('Masukan nama belakang anda : ')
 print(f"Welcome {front_name} {back_name}")
 
 # mtk = (5 * (10+(5-3)))
+
 jumlah_todos = int(input('Masukan jumlah todos yang anda inginkan : '))
 print(type(jumlah_todos))
 
@@ -22,10 +23,6 @@ for i in range(1, jumlah_todos + 1):
     todos.append(todo)
 
 
-#todos.append(todos1) # masukin makan 
-#todos.append(todos2) # masukin berenang
-#todos.append(todos3) # masukin olahraga
-#todos.append(todos4) # masukin membaca
 
 if len(todos) == 4:
     print(f"todos anda adalah {todos}, jumlah todos anda adalah {len(todos)}")

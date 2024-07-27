@@ -1,0 +1,5 @@
+1. aplikasinya itu bisa nambahin todo
+2. bisa display jumlah todo dan detailnya
+3. bisa edit todo nanti
+4. bisa hapus todo 
+4a. bisa hapus semua todo sekaligus
