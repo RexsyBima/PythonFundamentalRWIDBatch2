@@ -1,5 +1,4 @@
-from re import L
-
+import json
 
 def intro():
     print("###################################")
@@ -24,7 +23,7 @@ def get_user_input():
     while True:
         try:
             user_input = int(input("Silahkan masukan angka sesuai diatas : "))
-            if user_input in [1,2,3,4]:
+            if user_input in [1,2,3,4,5]:
                 return user_input
             else:
                 print("input tidak valid, silahkan input angka sesuai diatas")
@@ -48,6 +47,10 @@ def exit_program(todos):
     if exit_ == 'y':
         print('exiting program')
         print(f"todos anda adalah {todos}, jumlah todos anda adalah {len(todos)}")
+        data = {"todos" : todos}
+        with open('todos.json', 'w') as file:
+            json.dump(data, file)
+        
         exit()
     elif exit_ == 'n':
         print('restarting program (WIP)')
@@ -82,28 +85,33 @@ def delete_all_todos(todos):
         return todos
     
 
-# COBA CARI ttg if name == main, cara menyimpan hasil kodingan kita di sebuah file
+# COBA CARI ttg if __name__ == "__main__", cara menyimpan hasil kodingan kita di sebuah file
 
-intro()
-full_name = name_input()
-show_username(full_name)
-todos = ['todo1', 'todo2', 'todo3']
-while True:
-    main_menu()
-    user_input = get_user_input()
-    #print(f"user input anda adalah {user_input}")
-    if user_input == 1:
-        todos = add_todos(todos) # same varaible overriding
-        print("Kembali ke menu utama 😁")
-    elif user_input == 2:
-        show_todos(todos)
-    elif user_input == 3:
-        show_todos(todos)
-        todos = delete_todos(todos)
-        print("Kembali ke menu utama 😁")
-    elif user_input == 4:
-        todos = delete_all_todos(todos)
-    elif user_input == 5:
-        exit_program(todos)
-    else:
-        print("input tidak valid")    
+    # readability
+    # dunders method
+    # double underscores
+if __name__ == "__main__": # Bilang bahwa skrip utama/flow of codenya itu dimulai dari sini!
+    print(__name__)
+    intro()
+    full_name = name_input()
+    show_username(full_name)
+    todos = ['todo1', 'todo2', 'todo3', 'todo4', 'todo5']
+    while True:
+        main_menu()
+        user_input = get_user_input()
+        #print(f"user input anda adalah {user_input}")
+        if user_input == 1:
+            todos = add_todos(todos) # same varaible overriding
+            print("Kembali ke menu utama 😁")
+        elif user_input == 2:
+            show_todos(todos)
+        elif user_input == 3:
+            show_todos(todos)
+            todos = delete_todos(todos)
+            print("Kembali ke menu utama 😁")
+        elif user_input == 4:
+            todos = delete_all_todos(todos)
+        elif user_input == 5:
+            exit_program(todos)
+        else:
+            print("input tidak valid")    

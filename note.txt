@@ -1,0 +1,4 @@
+  File "/home/rexsybimatw/Python/PythonFundamental_Batch2/2_Agustus_2024/json_tut.py", line 5, in <module>
+    print(data['squadName'])
+TypeError: string indices must be integers
+ttg string slicing
