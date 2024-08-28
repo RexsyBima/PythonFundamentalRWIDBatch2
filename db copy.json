@@ -1,0 +1,115 @@
+{
+    "admin": {
+        "name": "admin",
+        "password": "admin",
+        "todos": [
+            {
+                "description": "x",
+                "isImportant": true,
+                "name": "x",
+                "notes": [
+                    "x",
+                    "y",
+                    "z"
+                ]
+            }
+        ]
+    },
+    "admin1": {
+        "name": "admin1",
+        "password": "admin1",
+        "todos": []
+    },
+    "Bimbim": {
+        "name": "Bimbim",
+        "password": "password",
+        "todos": []
+    },
+    "JokoBudi": {
+        "name": "JokoBudi",
+        "password": "password",
+        "todos": []
+    },
+    "User1": {
+        "name": "User1",
+        "password": "password",
+        "todos": [
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "eat",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            },
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "sleep",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            },
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "code",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            },
+            {
+                "description": "Di Ancol",
+                "isImportant": true,
+                "name": "Berenang",
+                "notes": [
+                    "ekstra1",
+                    "2",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "User2": {
+        "name": "User2",
+        "password": "password",
+        "todos": [
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "beda data",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            },
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "sleep",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            },
+            {
+                "description": "this is description",
+                "isImportant": true,
+                "name": "code",
+                "notes": [
+                    "note1",
+                    "note2",
+                    "note3"
+                ]
+            }
+        ]
+    }
+}
